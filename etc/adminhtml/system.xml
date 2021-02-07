@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+  <system>
+    <tab id="footer_option" sortOrder="1" translate="label">
+      <label>Second Menu</label>
+    </tab>
+    <section id="footer_option_section" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+      <label>Second Menu Options</label>
+      <tab>footer_option</tab>
+      <resource>Agalakotuwa_Secondfooter::config_agalakotuwa_secondfooter</resource>
+      <group id="groupname" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+        <label>Second Menu Options</label>
+        <field id="fieldid" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+          <label>Enable in frontend</label>
+          <comment/>
+          <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+        </field>
+        <field id="button_text" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+          <label>Button Text</label>
+          <comment>Frontend footer button text</comment>
+        </field>
+      </group>
+    </section>
+  </system>
+</config>

@@ -1,0 +1,26 @@
+<?php
+if ($block->enableDisable()) {
+    if ($block->checkOnProductPage () == false) {
+        ?>
+
+        <button type="button" class="click-popup"><?php echo $block->getButtonTitle (); ?></button>
+
+        <div id="popup-modal">
+            <h1><?php /* @escapeNotVerified */
+                echo __ ( 'Guess the number' ) ?></h1>
+            <div id="notify-msg"></div>
+            <div id="notify-msg-c"></div>
+            <form id="guess-number">
+                <input type="text" name="random_number" id="random_number" placeholder="<?php /* @escapeNotVerified */
+                echo __ ( 'Enter Number' ) ?>"/>
+            </form>
+        </div>
+    <script type="text/x-magento-init">
+    {
+        "*": {
+            "secondFooter": {}
+        }
+    }
+    </script>
+    <?php }
+}?>

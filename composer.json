@@ -1,0 +1,22 @@
+{
+    "name": "agalakotuwa/module-secondfooter",
+    "description": "Add a second footer to the website",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "chamarabuddika@yahoo.com",
+            "name": "Chamara"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Agalakotuwa\\Secondfooter\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

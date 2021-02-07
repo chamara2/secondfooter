@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	 <head>
+          <css src="Agalakotuwa_Secondfooter::css/secondfooter.css" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <referenceContainer name="before.body.end">
+            <container name="secondfooter" label="Second Footer" htmlTag="div" htmlClass="secondfooter content">
+                <block class="Agalakotuwa\Secondfooter\Block\Secondfooter" name="Agalakotuwa_Secondfooter" after="-" template="Agalakotuwa_Secondfooter::custom_footer.phtml" />
+            </container>
+        </referenceContainer>
+    </body>
+</page>

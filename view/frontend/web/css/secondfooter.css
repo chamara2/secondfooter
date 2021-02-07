@@ -1,0 +1,27 @@
+.secondfooter.content{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    padding-top: 20px;
+}
+.click-popup{
+    background: green;
+    font-size: 20px;font-weight: bold;padding: 20px;
+}
+#notify-msg {
+    color: red;
+}
+#notify-msg-c{font-weight: bold; font-size: 16px;
+    color: green;}
+@media screen and (max-width: 600px) {
+    .secondfooter {
+        visibility: hidden;
+        clear: both;
+        display: none;
+    }
+}
+#popup-modal{display: none}
